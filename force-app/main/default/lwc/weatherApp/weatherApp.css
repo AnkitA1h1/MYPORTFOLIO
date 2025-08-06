@@ -1,0 +1,115 @@
+.weather-home {
+    background: linear-gradient(45deg, black, transparent);
+    height: 100vh;
+
+}
+
+.background{
+    
+    background-image: url(/sfsites/c/resource/WeatherBack);
+}
+
+.app-card {
+    background: white;
+    max-width: 400px;
+    min-width: 375px;
+    border-radius: 10px;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    font-size: 24px;
+    color: currentColor;
+    padding: 14px;
+    border-bottom: 1px solid lightgrey;
+}
+
+.back-arrow{
+    margin-right: 20px;
+}
+
+input {
+    width: 100%;
+    text-align: center;
+    padding: 16px;
+    font-size: 24px;
+    border-radius: 8px;
+    outline: none;
+    border: 2px solid lightslategrey;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: darkorchid;
+    outline: none;
+    border: 1px solid darkorchid;
+    color: white;
+    font-size: 24px;
+    border-radius: 8px;
+}
+
+.successText {
+    color: green;
+    background: lightgreen;
+    padding: 8px;
+    border-radius: 8px;
+    margin: 8px;
+}
+
+.errorText {
+    color: red;
+    background: lightpink;
+    padding: 8px;
+    border-radius: 8px;
+    margin: 8px;
+}
+
+.content-center {
+    text-align: center;
+}
+
+.temprature {
+    font-size: 60px;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.description,
+.location {
+    font-size: 24px;
+    margin-top: 10px;
+    line-height: normal;
+}
+
+.location{
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid lightgrey;
+    text-align: center
+}
+
+.footer-left{
+    width: 100%;
+    padding: 16px;
+}
+
+.footer-right{
+    border-left: 1px solid lightgrey;
+    width: 100%;
+    padding: 16px;
+}
+
+.cloud{
+    width: 125px;
+}

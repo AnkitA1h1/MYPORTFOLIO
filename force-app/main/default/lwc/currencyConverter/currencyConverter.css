@@ -1,0 +1,80 @@
+
+.currency-app{
+    min-height: 100vh;
+    background-image: url(/sfsites/c/resource/currencyConverterAssets/currencyConverterAssets/currencyAppBackground.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    justify-content: center;
+}
+
+.custom-card {
+    max-width: 520px;
+    background: midnightblue;
+    color: white;
+    padding: 20px;
+    border-radius: 20px;
+    min-width: 370px;
+}
+
+h1 {
+    font-weight: 500;
+}
+
+.custom-button, .custom-button:hover, .custom-button:active {
+    background: gold;
+    color: midnightblue;
+    padding: 12px;
+    font-size: 22px;
+    margin-top: 24px;
+}
+
+
+.baseline{
+    align-items: baseline;
+}
+
+
+img{
+    display: block;
+    margin: auto;
+}
+
+.rotate{
+   width:150px;
+   height:150px;
+   animation: rotation infinite 3s linear;
+}
+
+@keyframes rotation{
+  from{
+    transform:rotate(0deg);
+  }
+  
+  to{
+    transform:rotate(360deg);
+  }
+}
+
+.custom-icon{
+    --slds-c-icon-color-foreground-default: gold;
+    --slds-c-icon-color-background: gold;
+    --slds-c-icon-color-foreground: rgb(17, 17, 65);
+    transform: rotate(45deg);
+}
+
+
+.result{
+    font-size: 24px;
+    font-weight: bold;
+    color: lightblue;
+}
+
+.result-to{
+    color: greenyellow;
+}
