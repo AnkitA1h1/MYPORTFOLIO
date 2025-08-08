@@ -1,0 +1,46 @@
+<template>
+    <div class="banner">
+        <img src={profilePic} class="profile-pic" alt="profile">
+        <div class="name">{FullName}</div>
+        <div class="destination">{Destination} at {CompanyName}</div>
+        <div class="location">{CompanyLocation}</div>
+        <div>
+            <template if:true={linkedinUrl}>
+                <a href={linkedinUrl} target="_blank">
+                    <img src={linkedinIcon} class="social-icon" alt="linkedin">
+                </a>
+            </template>
+
+            <template if:true={xUrl}>
+                <a href={xUrl} target="_blank">
+                    <img src={xIcons} class="social-icon" alt="X">
+                </a>
+            </template>
+
+            <template if:true={githubUrl}>
+                <a href={githubUrl} target="_blank">
+                    <img src={githubIcon} class="social-icon" alt="Github">
+                </a>
+            </template>
+            
+            <template if:true={trailheadUrl}>
+                <a href={trailheadUrl} target="_blank">
+                    <img src={trailheadIcon} class="social-icon" alt="Trailhead">
+                </a>
+            </template>
+            <template if:true={youTubeUrl}>
+                <a href={youTubeUrl} target="_blank">
+                    <img src={youTubeIcon} class="social-icon" alt="You Tube">
+                </a>
+            </template>
+            <template if:true={blogUrl}>
+                <a href={blogUrl} target="_blank">
+                    <img src={blogIcon} class="social-icon" alt="Blog">
+                </a>
+            </template>
+
+
+        </div>
+    </div>
+   
+</template>

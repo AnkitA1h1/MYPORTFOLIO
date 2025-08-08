@@ -1,0 +1,74 @@
+.banner {
+    background: navajowhite;
+    min-height: 300px;
+    text-align: center;
+    padding: 32px;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+.name {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.destination {
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.location {
+    font-size: 25px;
+    color: black;
+    text-shadow: 1px 1px blue;
+}
+
+.info {
+    background: darkblue;
+    min-height: 200px;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+}
+
+.bottom {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+    margin-top: 16px;
+}
+
+.eqaul-align{
+    width: 100%;
+}
+.social-icon{
+    width: 40px;
+    height: 40px;
+    margin: 16px 16px 0px 0px;
+}
+h1{
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+}
+h2{
+    color: yellow;
+    font-weight: 400;
+}
+h3{
+    color: yellow;
+    font-size: 25px;
+    font-weight: 700;
+}
+.rank{
+    width: 100px;
+    height: 80px;
+    
+}
