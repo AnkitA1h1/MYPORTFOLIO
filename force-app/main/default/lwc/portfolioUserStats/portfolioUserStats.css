@@ -1,0 +1,23 @@
+h1{
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+p{
+    color: yellow;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+img{
+    width: 100px;
+    height: 80px;
+    
+}
+
+@media (max-width: 720px) {
+    img{
+        margin-top: 16px;
+    }
+}

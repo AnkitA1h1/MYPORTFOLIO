@@ -1,0 +1,31 @@
+<template>
+    <lightning-layout multiple-rows>
+        <lightning-layout-item size="12" small-device-size="4" medium-device-size="3">
+            <template if:true={userRanksIcon}>
+                <img src={userRanksIcon} alt="User ranks">
+            </template>
+
+        </lightning-layout-item>
+        <lightning-layout-item size="12" small-device-size="4" medium-device-size="3">
+            <template if:true={badges}>
+                <h1>Badges</h1>
+                <p>{badges}</p>
+            </template>
+
+        </lightning-layout-item>
+        <lightning-layout-item size="12" small-device-size="4" medium-device-size="3">
+            <template if:true={points}>
+                <h1>Points</h1>
+                <p>{points}</p>
+            </template>
+
+        </lightning-layout-item>
+        <lightning-layout-item size="12" small-device-size="4" medium-device-size="3">
+            <template if:true={trails}>
+                <h1>Trails</h1>
+                <p>{trails}</p>
+            </template>
+
+        </lightning-layout-item>
+    </lightning-layout>
+</template>
