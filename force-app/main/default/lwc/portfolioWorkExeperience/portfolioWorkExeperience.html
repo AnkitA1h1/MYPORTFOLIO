@@ -1,0 +1,60 @@
+<template>
+    <ul class="slds-timeline">
+        <template for:each={WorkExperienceData} for:item="WorkExperienceData">
+            <li key={WorkExperienceData.id}>
+                <div class="slds-timeline__item_expandable slds-timeline__item_task slds-is-open">
+                    <div class="slds-media">
+                        <div class="slds-media__figure">
+                            <button class="slds-button slds-button_icon">
+                                <lightning-icon icon-name='utility:switch' alternative-text='switch' size='x-small'
+                                    title='switch'></lightning-icon>
+                            </button>
+                            <div class="slds-icon_container slds-icon-standard-task slds-timeline__icon" title="task">
+                                <lightning-icon icon-name='standard:task' alternative-text='task' size='small'
+                                    title='task'></lightning-icon>
+                            </div>
+                        </div>
+                        <div class="slds-media__body">
+                            <div class="slds-grid slds-grid_align-spread slds-timeline__trigger">
+                                <div
+                                    class="slds-grid slds-grid_vertical-align-center slds-truncate_container_75 slds-no-space">
+
+                                    <h3 class="slds-truncate" title={WorkExperienceData.Role}>
+                                        <strong>{WorkExperienceData.Role}</strong>
+
+                                    </h3>
+
+                                </div>
+                                <div class="slds-timeline__actions slds-timeline__actions_inline">
+                                    <template if:true={WorkExperienceData.IsCurrent}>
+                                        <p class="slds-timeline__date">{WorkExperienceData.StartDate} - Current</p>
+                                    </template>
+                                    <template if:false={WorkExperienceData.IsCurrent}>
+                                        <p class="slds-timeline__date">{WorkExperienceData.StartDate} -
+                                            {WorkExperienceData.EndDate}</p>
+                                    </template>
+
+
+                                </div>
+                            </div>
+                            <p class="slds-m-horizontal_xx-small">
+                                {WorkExperienceData.CompanyName} {WorkExperienceData.WorkLocation}
+                            </p>
+                            <article
+                                class="slds-box slds-timeline__item_details slds-theme_shade slds-m-top_x-small slds-m-horizontal_xx-small slds-p-around_medium"
+                                >
+
+                                <div>
+                                    <c-portfolio-append-html content={WorkExperienceData.Description}></c-portfolio-append-html>
+                                    
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </template>
+
+    </ul>
+
+</template>
